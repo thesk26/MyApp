@@ -1,36 +1,25 @@
-import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native'
+// import Registration from './src/screens/Registration';
+import LoginScreenSimple from './src/screens/LoginScreenSimple';
+// import LoginScreen from './src/screens/LoginScreen';
 
 const App = () => {
-  const handlePress = () => {
-    ('Hello from React Native!');
-  };
-
-  return (
+return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hello, React Native!</Text>
-
-      <Button
-        title="Click Me"
-        onPress={handlePress}
-      />
+      {/* <Registration /> */}
+    <LoginScreenSimple />
+    {/* <LoginScreen /> */}
     </View>
-  );
+);
 };
 
 const styles = StyleSheet.create({
-  container: {
+container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
-  },
-
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-  },
+    backgroundColor: '#000000'
+},
 });
 
 export default App;
